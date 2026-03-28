@@ -69,9 +69,3 @@ After all outputs, one witness stack per input is included. Each stack is a list
 
 ---
 
-## Key Concepts
-
-- **Little-endian**: most numeric fields are stored least-significant byte first
-- **Satoshis**: all amounts are integers in satoshis; divide by 100,000,000 for BTC
-- **Witness**: SegWit moves signature data out of the scriptSig into a separate witness field, reducing the tx weight counted toward the block size limit
-- **Sequence `0xFFFFFFFD`**: signals RBF (Replace-By-Fee) opt-in — the transaction can be replaced with a higher-fee version while still in the mempool
